@@ -1,0 +1,96 @@
+/*
+Theme Name:   121 Maths
+Theme URI:    http://example.com/
+Description:  121 Maths Theme
+Author:       Ian Renton
+Author URI:   http://ianrenton.com
+Template:     twentysixteen
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  121maths
+*/
+
+/**
+ * Desktop & mobile
+ */
+body {
+  font-family: Calibri,sans-serif;
+  font-size: 1.2rem;
+}
+
+.site-branding .site-title a {
+  color: #109ABB;
+}
+
+.entry-title {
+  margin-bottom: 0.5em;
+  margin-top: 0.25em;
+}
+
+footer#colophon {
+  display:none;
+}
+
+/**
+ * Desktop only
+ */
+@media screen and (min-width: 56.875em) {
+  header#masthead {
+    padding: 0 7em 0 7em;
+  }
+
+  div.site-branding {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  img.custom-logo {
+    float: left;
+  }
+
+  .wp-custom-logo .site-title {
+    font-size: 48px;
+    margin-left: 230px;
+    margin-top: 0.6em;
+  }
+  
+  p.site-description {
+    font-size: 22px;
+    margin-left: 230px;
+  }
+
+  div#site-header-menu {
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-size: 80%;
+    background-color: #94c5d8;
+  }
+
+  .main-navigation .primary-menu > li {
+      margin-left: 6.2em;
+  }
+  
+  .homepageleft {
+    width: 68%;
+    float: left;
+  }
+  
+  .homepageright {
+    width: 28%;
+    float: right;
+  }
+}
+
+/**
+ * Mobile only
+ */
+@media screen and (max-width: 56.875em) {
+  .homepageleft, .homepageright {
+    width: 100%;
+  }
+}
